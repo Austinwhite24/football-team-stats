@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html id="wholePage" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Football Stats</title>
+</head>
+<div id="top">
+    <button id="titleBtn">
+        <h1>Chips Ahoy Football Team</h1>
+    </button>
+    <!-- <h1>Chips Ahoy Football Page</h1> -->
+</div>
+<body>
+
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 18px;
+    }
+    td {
+        text-align: center;
+    }
+</style>
+<section class="stats">
+    <div class="seasonStats">
+        <button class="leftTitle">
+            <h2>SEASON STATS</h2>
+        </button>
+
+        <table style="width:100%" id="table">
+            <tr id="headerStats">
+              <th>Player</th>
+              <th>Passing TD</th>
+              <th>Thrown INT</th>
+              <th>Rushing TD</th>
+              <th>Receiving TD</th>
+              <th>Defensive INT</th>
+              <th>Defensive TD</th>
+              <th>1 Point Conversion</th>
+              <th>2 Point Conversion</th>
+              <th>3 Point Conversion</th>
+              
+            </tr>
+            <tr id="austin">
+              <td class="player">Austin White:</td>
+              <td class="passingTD">55</td>
+              <td class="thrownINT">6</td>
+              <td class="rushingTD">5</td>
+              <td class="receivingTD">12</td>
+              <td class="defensiveINT">8</td>
+              <td class="defensiveINT">4</td>
+              <td class="oneExtraP">21</td>
+              <td class="twoExtraP">8</td>
+              <td class="threeExtraP">11</td>
+            </tr>
+            <tr id="chris">
+                <td class="player">Chris White:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="masonBro">
+                <td class="player">Mason White:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="cooper">
+                <td class="player">Cooper Mattson:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="colten">
+                <td class="player">Colten Spencer:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="calvin">
+                <td class="player">Calvin Colson:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="asa">
+                <td class="player">Asa Mccord:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="masonFriend">
+                <td class="player">Mason White 2:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+          </table>
+    </div>
+</section>
+
+
+<section class="stats">
+    <div class="gameOneStats">
+        <button class="leftTitle">
+            <h2>GAME 1 STATS</h2>
+        </button>
+        <table style="width:100%" id="table">
+            <tr id="headerStats">
+              <th>Player</th>
+              <th>Passing TD</th>
+              <th>Thrown INT</th>
+              <th>Rushing TD</th>
+              <th>Receiving TD</th>
+              <th>Defensive INT</th>
+              <th>Defensive TD</th>
+              <th>1 Point Conversion</th>
+              <th>2 Point Conversion</th>
+              <th>3 Point Conversion</th>
+              
+            </tr>
+            <tr id="austin">
+              <td class="player">Austin White:</td>
+              <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+            </tr>
+            <tr id="chris">
+                <td class="player">Chris White:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="masonBro">
+                <td class="player">Mason White:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="cooper">
+                <td class="player">Cooper Mattson:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="colten">
+                <td class="player">Colten Spencer:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="calvin">
+                <td class="player">Calvin Colson:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="asa">
+                <td class="player">Asa Mccord:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="masonFriend">
+                <td class="player">Mason White 2:</td>
+                <td class="passingTD">-</td>
+              <td class="thrownINT">-</td>
+              <td class="rushingTD">-</td>
+              <td class="receivingTD">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="defensiveINT">-</td>
+              <td class="oneExtraP">-</td>
+              <td class="twoExtraP">-</td>
+              <td class="threeExtraP">-</td>
+              </tr>
+          </table>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="gameTwoStats">
+        <button class="leftTitle">
+            <h2>GAME 2 STATS</h2>
+        </button>
+        <table style="width:100%" id="table">
+            <tr id="headerStats">
+              <th>Player</th>
+              <th>Passing TD</th>
+              <th>Thrown INT</th>
+              <th>Rushing TD</th>
+              <th>Receiving TD</th>
+              <th>Defensive INT</th>
+              <th>Defensive TD</th>
+              <th>1 Point Conversion</th>
+              <th>2 Point Conversion</th>
+              <th>3 Point Conversion</th>
+              
+            </tr>
+            <tr id="austin">
+                <td class="player">Austin White:</td>
+                <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="chris">
+                  <td class="player">Chris White:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="masonBro">
+                  <td class="player">Mason White:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="cooper">
+                  <td class="player">Cooper Mattson:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="colten">
+                  <td class="player">Colten Spencer:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="calvin">
+                  <td class="player">Calvin Colson:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="asa">
+                  <td class="player">Asa Mccord:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="masonFriend">
+                  <td class="player">Mason White 2:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+          </table>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="gameThreeStats">
+        <button class="leftTitle">
+            <h2>GAME 3 STATS</h2>
+        </button>
+        <table style="width:100%" id="table">
+            <tr id="headerStats">
+              <th>Player</th>
+              <th>Passing TD</th>
+              <th>Thrown INT</th>
+              <th>Rushing TD</th>
+              <th>Receiving TD</th>
+              <th>Defensive INT</th>
+              <th>Defensive TD</th>
+              <th>1 Point Conversion</th>
+              <th>2 Point Conversion</th>
+              <th>3 Point Conversion</th>
+              
+            </tr>
+            <tr id="austin">
+                <td class="player">Austin White:</td>
+                <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="chris">
+                  <td class="player">Chris White:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="masonBro">
+                  <td class="player">Mason White:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="cooper">
+                  <td class="player">Cooper Mattson:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="colten">
+                  <td class="player">Colten Spencer:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="calvin">
+                  <td class="player">Calvin Colson:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="asa">
+                  <td class="player">Asa Mccord:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="masonFriend">
+                  <td class="player">Mason White 2:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+          </table>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="gameFourStats">
+        <button class="leftTitle">
+            <h2>GAME 4 STATS</h2>
+        </button>
+        <table style="width:100%" id="table">
+            <tr id="headerStats">
+              <th>Player</th>
+              <th>Passing TD</th>
+              <th>Thrown INT</th>
+              <th>Rushing TD</th>
+              <th>Receiving TD</th>
+              <th>Defensive INT</th>
+              <th>Defensive TD</th>
+              <th>1 Point Conversion</th>
+              <th>2 Point Conversion</th>
+              <th>3 Point Conversion</th>
+              
+            </tr>
+            <tr id="austin">
+                <td class="player">Austin White:</td>
+                <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="chris">
+                  <td class="player">Chris White:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="masonBro">
+                  <td class="player">Mason White:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="cooper">
+                  <td class="player">Cooper Mattson:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="colten">
+                  <td class="player">Colten Spencer:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="calvin">
+                  <td class="player">Calvin Colson:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="asa">
+                  <td class="player">Asa Mccord:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="masonFriend">
+                  <td class="player">Mason White 2:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+          </table>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="gameFiveStats">
+        <button class="leftTitle">
+            <h2>GAME 5 STATS</h2>
+        </button>
+        <table style="width:100%" id="table">
+            <tr id="headerStats">
+              <th>Player</th>
+              <th>Passing TD</th>
+              <th>Thrown INT</th>
+              <th>Rushing TD</th>
+              <th>Receiving TD</th>
+              <th>Defensive INT</th>
+              <th>Defensive TD</th>
+              <th>1 Point Conversion</th>
+              <th>2 Point Conversion</th>
+              <th>3 Point Conversion</th>
+              
+            </tr>
+            <tr id="austin">
+                <td class="player">Austin White:</td>
+                <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+              </tr>
+              <tr id="chris">
+                  <td class="player">Chris White:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="masonBro">
+                  <td class="player">Mason White:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="cooper">
+                  <td class="player">Cooper Mattson:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="colten">
+                  <td class="player">Colten Spencer:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="calvin">
+                  <td class="player">Calvin Colson:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="asa">
+                  <td class="player">Asa Mccord:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+                <tr id="masonFriend">
+                  <td class="player">Mason White 2:</td>
+                  <td class="passingTD">-</td>
+                <td class="thrownINT">-</td>
+                <td class="rushingTD">-</td>
+                <td class="receivingTD">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="defensiveINT">-</td>
+                <td class="oneExtraP">-</td>
+                <td class="twoExtraP">-</td>
+                <td class="threeExtraP">-</td>
+                </tr>
+          </table>
+    </div>
+</section>
+
+    
+</body>
+</html>

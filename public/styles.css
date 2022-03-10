@@ -1,0 +1,50 @@
+#wholePage {
+    background-color: rgb(246, 250, 250);
+}
+#top{
+    display: flex;
+    justify-content: center;
+}
+#titleBtn {
+    background-color: rgb(246, 250, 250);
+      border-color:  #D72A20;
+}
+
+h1{
+    font-size: 70px;
+    color: #8ac4e4;
+    color: #004382;
+    border: 3px soild #D72A20;
+    font-family: 'Caveat Brush', cursive;
+    
+}
+h2{
+    color:#004382
+}
+tr:nth-child(even) {
+    background-color: #b7dede;
+    background-color: #c1dae7;
+  }
+  tr:nth-child(odd) {
+    background-color: #e7f1f1;
+    /* background-color: #004382; */
+  }
+  #headerStats{
+      margin: 5px;
+  }
+  #table {
+     
+  }
+  .stats{
+      margin: 10px;
+  }
+  .gameOneStats {
+      /* background-color: aqua; */
+      /* margin: 10px; */
+  }
+  .leftTitle {
+      border-radius: 10px;
+      margin: 20px;
+      background-color: rgb(246, 250, 250);
+      border-color:  #D72A20;
+  }
